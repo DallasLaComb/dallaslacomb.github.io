@@ -18,7 +18,7 @@
     <nav id="nav-placeholder"></nav>
     <div class="body" id="content">
       
-        <h1 id="roundNumberLOL">Initial Text</h1>
+        <h1 id="roundNumber">Initial Text</h1>
         <div class="middle">
             <h1>Strikes</h1>
         </div>
@@ -33,7 +33,7 @@
     $(".continue").click(() => {
         $('#content').load('game.html');
     });
-    document.getElementById('roundNumberLOL').innerHTML = 'Round: ' + (parseInt(round) + 1).toString();
+    document.getElementById('roundNumber').innerHTML = 'Round: ' + (parseInt(round) + 1).toString();
     if(lives!=null){
     document.querySelector(".strikes").innerHTML = (parseInt(lives)).toString();
 }

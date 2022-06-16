@@ -13,8 +13,6 @@
   
   text-align: center;
   
-  
-  
 }
 .container{
 width:90vw;
@@ -29,6 +27,7 @@ width:90vw;
   font-weight:bold;
   padding:auto;
   color:white;
+  
 }
 
 
@@ -63,8 +62,11 @@ width:90vw;
   
   }
 
-
-
+  :not(.active).btn{
+    opacity : 0;
+    cursor:default;
+  }
+  
 
   .navbar-nav{
     text-align: right;
