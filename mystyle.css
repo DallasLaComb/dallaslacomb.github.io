@@ -18,8 +18,9 @@ body {
   font-weight: bold;
   line-height: 50px;
   color: white;
-  height: 63px;
-  width: 63px;
+  height: 58px;
+  width: 58px;
+  margin: 3px;
 }
 .container {
   display: inline-block;
