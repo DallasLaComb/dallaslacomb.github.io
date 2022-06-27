@@ -9,7 +9,7 @@ var roundCompleted = document.getElementsByClassName("continue").length == 0;
 if (roundCompleted) {
   // update round
   if (round == null) {
-    round = 45;
+    round = 4;
   } else {
     round++;
   }
