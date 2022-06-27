@@ -1,81 +1,45 @@
-
-  .active:hover{
-    cursor:pointer;
-    border: 5px solid rgba(243, 234, 238, 0.9);
+.active:hover {
+  cursor: pointer;
+  border: 5px solid rgba(243, 234, 238, 0.9);
 }
 
-.active{
-  border: 5px solid rgba(243, 234, 238, 0.5);
+.active {
+  border: 3px solid rgba(243, 234, 238, 0.5);
 }
 
- body{
-  background-color: #1196F3;
-  
+body {
+  background-color: #1196f3;
   text-align: center;
-  
-}
-.container{
-width:90vw;
-
-}
-.btn{
-  text-align:center;
-  padding-top: 3vw;
-  height:10vw;
-  width:10vw;
-  font-size:1em;
-  font-weight:bold;
-  padding:auto;
-  color:white;
-  
 }
 
-
-
-
-
-/*Mobile Phones*/
-@media only screen and (max-width: 700px) {
-.btn{
-  height:50px;
-  width:50px;
-  font-size:1.5em;
-  padding-top:9px;
+.btn {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 50px;
+  color: white;
+  height: 63px;
+  width: 63px;
 }
+.container {
+  display: inline-block;
 }
-@media only screen and (min-width: 700px) {
-  .btn{
-    height:80px;
-    width:80px;
-    font-size:2em;
-    padding-top:20px;
-  }
-  }
-/*Desktop*/
-@media only screen and (min-width: 1100px) {
-  .btn{
-    font-size:2em;
-    padding-top:25px;
-    width:100px;
-    height:100px;
-  }
-  
-  }
+:not(.active).btn {
+  opacity: 0;
+  cursor: default;
+}
 
-  :not(.active).btn{
-    opacity : 0;
-    cursor:default;
-  }
-  
-
-  .navbar-nav{
-    text-align: right;
-  }
-  .navbar .navbar-nav .nav-link {
-      color: #000000;
-      font-size: 1.1em;
-      padding-right: 1em;
-  }
-  .navbar .navbar-nav .nav-link:hover{
-      color: #808080;
-  }
+.navbar-nav {
+  text-align: right;
+}
+.navbar .navbar-nav .nav-link {
+  color: #000000;
+  font-size: 1.1em;
+  padding-right: 1em;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: #808080;
+}
+.navbar {
+  margin-bottom: 5px;
+}
