@@ -14,33 +14,39 @@ body {
 
 .btn {
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1em;
   font-weight: bold;
-  line-height: 50px;
+  line-height: 9vw;
   color: white;
-  height: 58px;
-  width: 58px;
+  height: 13vw;
+  width: 13vw;
   margin: 3px;
 }
-.container {
+.game-container {
   display: inline-block;
+  margin: 10px auto;
+  width: auto;
 }
 :not(.active).btn {
   opacity: 0;
   cursor: default;
 }
 
-.navbar-nav {
-  text-align: right;
-}
-.navbar .navbar-nav .nav-link {
-  color: #000000;
-  font-size: 1.1em;
-  padding-right: 1em;
-}
-.navbar .navbar-nav .nav-link:hover {
-  color: #808080;
-}
-.navbar {
-  margin-bottom: 5px;
+/*MOBILE PHONES ABOVE ^ 360 x 640 --*/
+@media only screen and (min-width: 768px) {
+  .btn {
+    height: 7vw;
+    width: 7vw;
+    line-height: 6vw;
+    font-size: 2.2em;
+    text-align: center;
+    padding: 0;
+  }
+  .active {
+    border-width: 8px;
+  }
+  .game-container {
+    margin: 10px auto;
+    width: auto;
+  }
 }
