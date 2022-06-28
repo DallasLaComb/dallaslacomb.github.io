@@ -1,52 +1,53 @@
 .active:hover {
-  cursor: pointer;
-  border: 5px solid rgba(243, 234, 238, 0.9);
+	cursor: pointer;
+	border: 5px solid rgba(243, 234, 238, 0.9);
+	color: white;
 }
 
 .active {
-  border: 3px solid rgba(243, 234, 238, 0.5);
+	border: 3px solid rgba(243, 234, 238, 0.5);
 }
 
 body {
-  background-color: #1196f3;
-  text-align: center;
+	background-color: #1196f3;
+	text-align: center;
 }
 
 .btn {
-  text-align: center;
-  font-size: 1em;
-  font-weight: bold;
-  line-height: 9vw;
-  color: white;
-  height: 13vw;
-  width: 13vw;
-  margin: 3px;
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 9vw;
+	color: white;
+	height: 13vw;
+	width: 13vw;
+	margin: 3px;
 }
 .game-container {
-  display: inline-block;
-  margin: 10px auto;
-  width: auto;
+	display: inline-block;
+	margin: 10px auto;
+	width: auto;
 }
 :not(.active).btn {
-  opacity: 0;
-  cursor: default;
+	opacity: 0;
+	cursor: default;
 }
 
 /*MOBILE PHONES ABOVE ^ 360 x 640 --*/
 @media only screen and (min-width: 768px) {
-  .btn {
-    height: 7vw;
-    width: 7vw;
-    line-height: 6vw;
-    font-size: 2.2em;
-    text-align: center;
-    padding: 0;
-  }
-  .active {
-    border-width: 8px;
-  }
-  .game-container {
-    margin: 10px auto;
-    width: auto;
-  }
+	.btn {
+		height: 7vw;
+		width: 7vw;
+		line-height: 6vw;
+		font-size: 2.2em;
+		text-align: center;
+		padding: 0;
+	}
+	.active {
+		border-width: 8px;
+	}
+	.game-container {
+		margin: 10px auto;
+		width: auto;
+	}
 }
